@@ -1,118 +1,74 @@
-  /****** DESKTOP ******/
+/****** DESKTOP ******/
 
+.hero {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 72px;
+  background: var(--color-main-1);
+}
+  
+.h1-p-btn-img {
+  display: flex;
+  max-width: 1000px;
+}
+
+.h1-p-btn {
+  display: flex;
+  overflow: hidden;
+  padding-right: 72px;
+  flex-direction: column;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+}
+
+.hero div img {
+  display: flex;
+  justify-content: center;
+  max-width: fit-content;
+  width: 100%;
+}
+  
+/****** DESKTOP < 1000px ******/
+@media only screen and (max-width: 1000px) {
   .hero {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    padding: 80px;
-    background: var(--main-1, #1F2039);
-    gap: 10px;
-  }
-  
-  .h1-p-cta-img {
-    /* background-color: #dff; */
-    display: flex;
-    /* justify-content: center;
-    flex-wrap: wrap-reverse; */
-    max-width: 1000px;
+    padding: 48px 20px;
   }
 
- .h1-p-cta {
-    /* border: 1px solid red; */
-    display: flex;
-    overflow: hidden;
-    padding-right: 80px;
-    flex-direction: column;
+  .h1-p-btn-img {
+    max-width: none;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    row-gap: 20px;
   }
-  
-  h1 {
-    /* border: 1px solid black; */
-    color: var(--h1-color);
-    font-family: var(--h1-font-family);
-    font-size: var(--h1-font-size);
-    font-style: var(--h1-font-style);
-    font-weight: var(--h1-font-weight);
-    line-height: var(--h1-line-height);
-    margin-bottom: 15px;
+
+  .h1-p-btn {
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .hero h1 {
+    text-align: center;
+    font-size: 32px;
   }
 
   .hero p {
-    color: var(--p-color);
-    font-family: var(--p-font-family);
-    font-size: var(--p-font-size);
-    font-style: var(--p-font-style);
-    font-weight: var(--p-font-weight);
-    line-height: var(--p-line-height);
-    margin-bottom: 30px;
+    text-align: center;
   }
-
-  .hero em {
-    font-style: var(--p-font-style);
-    color: var(--p_blue-color);
-    font-family: var(--p-font-family);
-    font-size: var(--p-font-size);
-    font-style: var(--p-font-style);
-    font-weight: var(--p-font-weight);
-    line-height: var(--p-line-height);
-  }
-
-  .cta {
-    width: fit-content;
-    padding: 20px 30px;
-    border-radius: 50px;
-    color : var(--btn-color);
-    background: var(--btn-background);
-    font-family  : var(--btn-font-family);
-    font-size  : var(--btn-font-size);
-    font-style  : var(--btn-font-style);
-    font-weight  : var(--btn-font-weight);
-    line-height  : var(--btn-line-height);
-    text-transform  : var(--btn-text-transform);
-    text-decoration: var(--btn-text-decoration);
-  }
-
-  .cta:hover {
-    background: var(--btn-background-hover);
-  }
-
-  .hero div img {
-    /* border: 1px solid green; */
-    display: flex;
-    justify-content: center;
-    max-width: fit-content;
-    width: 100%;
-  }
-  
-  /****** DESKTOP < 1000px ******/
-  @media only screen and (max-width: 1000px) {
-    .hero {
-      padding: 50px 20px;
-    }
-
-    .h1-p-cta-img {
-      max-width: none;
-      justify-content: center;
-      flex-wrap: wrap-reverse;
-      row-gap: 2rem;
-    }
-
-    .h1-p-cta {
-      align-items: center;
-      padding-right: 0;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 3.2rem;
-    }
-  }
+}
 
   /****** TABLETS ******/
-  @media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 
-  }
+} */
   
   /****** MOBILES ******/
-  @media only screen and (max-width: 375px) {
-    
-  }
+/* @media only screen and (max-width: 375px) {
+
+} */

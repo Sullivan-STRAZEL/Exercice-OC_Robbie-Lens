@@ -10,6 +10,7 @@
 
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link href="css/variables.css" type="text/css" rel="stylesheet">
+    <link href="css/components.css" type="text/css" rel="stylesheet">
     
     <!-- CSS Homepage -->
     <link href="css/pages/Homepage/header.css" type="text/css" rel="stylesheet">
@@ -23,7 +24,7 @@
     <header>
       <div class="banner">
         <a href="/" class="logo">
-          <img src="images/logo.png" alt="Logo">
+          <img src="images/logo.svg" alt="Logo">
         </a>
 
         <nav>
@@ -38,15 +39,15 @@
 
     <main>
       <section class="hero">
-        <div class="h1-p-cta-img">
-          <div class="h1-p-cta">
+        <div class="h1-p-btn-img">
+          <div class="h1-p-btn">
             <h1>Robbie Lens Photographie</h1>
 
             <p>
               Où <em class="important-intro-words">professionalisme</em>  s’allie avec <em class="important-intro-words">passion</em>. Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion qui m’anime : capturer l’essence de chaque instant.
             </p>
 
-            <a href="#" class="cta">Un projet ? écrivez-moi</a>
+            <a href="#contact" class="btn">Un projet ? écrivez-moi</a>
           </div>
             <img src="images/robbie-lens.png" alt="Photo de Robbie Lens">
         </div>
@@ -54,17 +55,31 @@
 
       <section class="galery">
         <h2>Mon dernier projet</h2>
-        <div>
-          <img src="images/galery-1/photo-01.jpg" alt="Photo paysage 1">
-          <img src="images/galery-1/photo-02.jpg" alt="Photo paysage 1">
-          <img src="images/galery-1/photo-03.jpg" alt="Photo paysage 1">
-          <img src="images/galery-1/photo-04.jpg" alt="Photo paysage 1">
-          <img src="images/galery-1/photo-05.jpg" alt="Photo paysage 1">
-          <img src="images/galery-1/photo-06.jpg" alt="Photo paysage 1">
+        <div class="first-gallery-line">
+          <div>
+            <img src="images/galery-1/photo-01.jpg" alt="Photo paysage 1" width="300px" height="300px">
+          </div>
+          <div>
+            <img src="images/galery-1/photo-02.jpg" alt="Photo paysage 2" width="300px" height="300px">
+          </div>
+          <div>
+            <img src="images/galery-1/photo-03.jpg" alt="Photo paysage 3" width="300px" height="300px">
+          </div>
+        </div>
+        <div class="second-gallery-line">
+          <div>
+            <img src="images/galery-1/photo-04.jpg" alt="Photo paysage 4" width="300px" height="300px">
+          </div>
+          <div>
+            <img src="images/galery-1/photo-05.jpg" alt="Photo paysage 5" width="300px" height="300px">
+          </div>
+          <div>
+            <img src="images/galery-1/photo-06.jpg" alt="Photo paysage 6" width="300px" height="300px">
+          </div>
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Parlons de votre projet</h2>
         <form action="/">
           <div>
@@ -80,19 +95,19 @@
             <textarea id="form-message" name="form-message"></textarea>
           </div>
           <div>
-            <input type="submit" id="form-submit">
+            <input type="submit" class="btn">
           </div>
         </form>
       </section>
     </main>      
 
       <footer>
-        <a class="logo">
-          <img src="images/logo.png" alt="Logo">
+        <a href="/" class="logo">
+          <img src="images/logo.svg" alt="Logo">
         </a>
-        <div>
-          <img src="images/twitter.png" alt="">
-          <img src="images/instagram.png" alt="">
+        <div class="icons-social-medias">
+          <a href="#"><img src="images/twitter.svg" alt="Logo Twitter"></a>
+          <a href="#"><img src="images/instagram.svg" alt="Logo Instagram"></a>
         </div>
       </footer>
 

@@ -1,54 +1,41 @@
-  /****** DESKTOP ******/
-  .galery {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8rem;
-  }
+/****** DESKTOP ******/
+.galery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 0;
+  gap: 4px;
+}
 
-  .galery h2 {
-    font-style: var(--h2-font-style);
-    color: var(--h2-color);
-    font-family: var(--h2-font-family);
-    font-size: var(--h2-font-size);
-    font-style: var(--h2-font-style);
-    font-weight: var(--h2-font-weight);
-    line-height: var(--h2-line-height);
-    margin-bottom: 8rem;
-  }
+.galery h2 {
+  color: var(--color-main-4);
+  margin-bottom: 72px;
+}
 
-  .galery div {
-    /* border: 1px solid yellow; */
-    max-width: 110rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
+.galery div {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
 
-  .galery img {
-    /* border: 1px solid yellow; */
-    max-width: fit-content;
-    width: 100%;
-  }
+.galery img {
+  max-width: 100%;
+  height: auto;
+}
 
-    /****** DESKTOP < 1000px ******/
-    @media only screen and (max-width: 1000px) {
-      .galery {
-        width: 100%;
-        padding: 5rem 3rem;
-      }
-    }
 
+/****** DESKTOP < 1000px ******/
+@media only screen and (max-width: 1000px) {
+
+}
+
+
+/****** TABLETS ******/
+/* @media only screen and (max-width: 768px) {
+
+} */
   
-
-  /****** TABLETS ******/
-  @media only screen and (max-width: 768px) {
-
-  }
-  
-  /****** MOBILES ******/
-  @media only screen and (max-width: 375px) {
+/****** MOBILES ******/
+/* @media only screen and (max-width: 375px) {
     
-  }
+} */
