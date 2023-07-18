@@ -1,0 +1,83 @@
+  /****** DESKTOP ******/
+
+header {
+    /* background-color: #0cc; */
+    padding: 20px 50px;
+  }
+  
+.banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  header .logo {
+    /* border: 1px solid yellow; */
+    display: flex;
+    width: 85px;
+    height: 43px;
+    transition: opacity .2s;
+  }
+  
+  header .logo:hover {
+    opacity: 0.5;
+  }
+  
+  header nav {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style-type: none;
+  }
+  
+  /* header li {
+    border: 2px solid yellow;
+  } */
+  
+  header ul a {
+    color: var(--nav_header-color);
+    font-family: var(--nav_header-font-family);
+    font-size: var(--nav_header-font-size);
+    font-style: var(--nav_header-font-style);
+    font-weight: var(--nav_header-font-weight);
+    line-height: var(--nav_header-line-height);
+    text-decoration: none;
+  }
+  
+  header ul a:hover {
+    color: var(--nav_header-color);
+    font-family: var(--nav_header-font-family);
+    font-size: var(--nav_header-font-size);
+    font-style: var(--nav_header-font-style);
+    font-weight: var(--nav_header-font-weight);
+    line-height: var(--nav_header-line-height);
+    text-decoration: underline;
+  }
+  
+  /****** TABLETS ******/
+  @media only screen and (max-width: 768px) {
+    header {
+      padding: 20px 50px;
+    }
+  
+    header .logo {
+      display: flex;
+    }
+  
+    header nav {
+      justify-content: center;
+      padding: 0px;
+    }
+  }
+  
+  /****** MOBILES ******/
+  @media only screen and (max-width: 375px) {
+    
+  }

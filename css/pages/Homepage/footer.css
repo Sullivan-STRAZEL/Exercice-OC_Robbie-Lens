@@ -1,0 +1,29 @@
+  /****** DESKTOP ******/
+  footer {
+    /* background-color: #0cc; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: 20px 50px;
+    gap: 20px;
+  }
+
+  footer div {
+    display: flex;
+    max-height: 31px;
+    height: 100%;
+  }
+
+  footer div img:nth-child(1) {
+    margin-right: 30px;
+  }
+
+  /****** TABLETS ******/
+  @media only screen and (max-width: 768px) {
+
+  }
+  
+  /****** MOBILES ******/
+  @media only screen and (max-width: 375px) {
+  }

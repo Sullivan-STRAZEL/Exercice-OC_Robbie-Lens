@@ -3,40 +3,55 @@
 
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Accueil – Robbie Lens Photographie</title>
-    <link href="/styles.css" rel="stylesheet">
+
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/variables.css" rel="stylesheet">
+    
+    <!-- CSS Homepage -->
+    <link href="/css/pages/Homepage/header.css" rel="stylesheet">
+    <link href="/css/pages/Homepage/hero.css" rel="stylesheet">
+    <link href="/css/pages/Homepage/galery.css" rel="stylesheet">
+    <link href="/css/pages/Homepage/contact.css" rel="stylesheet">
+    <link href="/css/pages/Homepage/footer.css" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <a>
-        <img src="/images/logo.png" alt="Logo">
-      </a>
+      <div class="banner">
+        <a href="/" class="logo">
+          <img src="/images/logo.png" alt="Logo">
+        </a>
 
-      <nav>
-        <ul>
-          <li>Accueil</li>
-          <li>À propos</li>
-          <li>Portfolio</li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/about">À propos</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <section>
-        <div>
-          <h1>Robbie Lens Photographie</h1>
+    <main>
+      <section class="hero">
+        <div class="h1-p-cta-img">
+          <div class="h1-p-cta">
+            <h1>Robbie Lens Photographie</h1>
 
-          <p>
-            Où <em class="important-intro-words">professionalisme</em>  s’allie avec <em class="important-intro-words">passion</em>. Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion qui m’anime : capturer l’essence de chaque instant.
-          </p>
+            <p>
+              Où <em class="important-intro-words">professionalisme</em>  s’allie avec <em class="important-intro-words">passion</em>. Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion qui m’anime : capturer l’essence de chaque instant.
+            </p>
 
-          <a href="#" class="cta">Un projet ? écrivez-moi</a>
-        </div>
-        <div>
-          <img src="/images/robbie-lens.png" alt="Photo de Robbie Lens">
+            <a href="#" class="cta">Un projet ? écrivez-moi</a>
+          </div>
+            <img src="/images/robbie-lens.png" alt="Photo de Robbie Lens">
         </div>
       </section>
 
-      <section>
+      <section class="galery">
         <h2>Mon dernier projet</h2>
         <div>
           <img src="/images/galery-1/photo-01.jpg" alt="Photo paysage 1">
@@ -48,36 +63,38 @@
         </div>
       </section>
 
-      <section>
+      <section class="contact">
         <h2>Parlons de votre projet</h2>
         <form action="/">
           <div>
-            <label for="">nom</label>
-            <input type="text">
+            <label for="form-fname">nom</label>
+            <input type="text" id="form-fname" name="form-fname">
           </div>
           <div>
-            <label for="">email</label>
-            <input type="email">
+            <label for="form-email">email</label>
+            <input type="email" id="form-email" name="form-email">
           </div>
           <div>
-            <label for="">message</label>
-            <input type="textarea">
+            <label for="form-message">message</label>
+            <textarea id="form-message" name="form-message"></textarea>
           </div>
           <div>
-            <input type="submit">
+            <input type="submit" id="form-submit">
           </div>
         </form>
       </section>
+    </main>      
 
       <footer>
-        <img src="/images/logo.png" alt="Logo">
+        <a class="logo">
+          <img src="/images/logo.png" alt="Logo">
+        </a>
         <div>
           <img src="/images/twitter.png" alt="">
           <img src="/images/instagram.png" alt="">
         </div>
       </footer>
 
-    </header>
   </body>
     
 </html>
